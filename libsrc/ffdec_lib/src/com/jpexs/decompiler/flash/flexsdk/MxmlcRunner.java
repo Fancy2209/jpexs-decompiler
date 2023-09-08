@@ -31,7 +31,7 @@ public class MxmlcRunner {
 
     public static String getMxmlcPath(String flexSdkPath) {
         boolean isWin = System.getProperty("os.name").toLowerCase().contains("win");
-        return flexSdkPath + File.separator + "bin" + File.separator + "mxmlc" + (isWin ? ".exe" : "");
+        return flexSdkPath + File.separator + "bin" + File.separator + "mxmlc" + (isWin ? ".bat" : "");
     }
 
     public void mxmlc(String... arguments) throws MxmlcException, InterruptedException, IOException {
